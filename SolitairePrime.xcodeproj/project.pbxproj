@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ACD4C9F02146EAB3006AB6ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACD4C9EF2146EAB3006AB6ED /* main.cpp */; };
+		ACD4C9F82146EAD6006AB6ED /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACD4C9F62146EAD6006AB6ED /* Card.cpp */; };
+		ACD4C9FB2146EC2C006AB6ED /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACD4C9F92146EC2C006AB6ED /* Deck.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		ACD4C9EC2146EAB3006AB6ED /* SolitairePrime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SolitairePrime; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD4C9EF2146EAB3006AB6ED /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		ACD4C9F62146EAD6006AB6ED /* Card.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		ACD4C9F72146EAD6006AB6ED /* Card.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
+		ACD4C9F92146EC2C006AB6ED /* Deck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		ACD4C9FA2146EC2C006AB6ED /* Deck.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Deck.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				ACD4C9EF2146EAB3006AB6ED /* main.cpp */,
+				ACD4C9F62146EAD6006AB6ED /* Card.cpp */,
+				ACD4C9F72146EAD6006AB6ED /* Card.hpp */,
+				ACD4C9F92146EC2C006AB6ED /* Deck.cpp */,
+				ACD4C9FA2146EC2C006AB6ED /* Deck.hpp */,
 			);
 			path = SolitairePrime;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD4C9FB2146EC2C006AB6ED /* Deck.cpp in Sources */,
 				ACD4C9F02146EAB3006AB6ED /* main.cpp in Sources */,
+				ACD4C9F82146EAD6006AB6ED /* Card.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
