@@ -20,6 +20,7 @@ public:
     Card(char r, char s);
     void print();
     int getValue();
+    void setCard(char r, char s);
 };
 
 #endif /* Card_hpp */

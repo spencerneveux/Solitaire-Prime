@@ -14,6 +14,11 @@ Card::Card() {}
 
 // Card constructor
 Card::Card(char r, char s) {
+    setCard(r, s);
+}
+
+// Setter
+void Card::setCard(char r, char s) {
     rank = r;
     suit = s;
 }
