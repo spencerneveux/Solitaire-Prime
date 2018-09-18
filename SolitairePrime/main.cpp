@@ -1,16 +1,36 @@
-//
-//  main.cpp
+// Spencer Neveux
+//  CECS 282
 //  SolitairePrime
-//
-//  Created by Spencer Neveux on 9/10/18.
-//  Copyright © 2018 Spencer Neveux. All rights reserved.
-//
+// 9/17/18
+
 
 #include <iostream>
 #include "Card.hpp"
 #include "Deck.hpp"
+void displayMenu();
+int getUserInput();
+bool isPrime(int value);
+void play(Deck deck);
 
 using namespace std;
+
+int main(int argc, const char * argv[]) {
+    Deck deck;
+    int choice;
+    do {
+        displayMenu();
+        choice = getUserInput();
+        switch (choice) {
+            case 1: cout << "Creating new Deck" << endl << endl; deck.refreshDeck(); break;
+            case 2: cout << "Display Deck" << endl; deck.showDeck(); break;
+            case 3: cout << "Shuffling Deck" << endl << endl; deck.shuffle(); break;
+            case 4: play(deck); cout<<endl<<endl; break;
+            case 5: cout << "Exiting program" << endl; break;
+        }
+    }while(choice != 5);
+    
+    return 0;
+}
 
 // Method to display main menu
 void displayMenu()
@@ -55,7 +75,7 @@ void play(Deck deck)
 {
     cout << "Playing Solitaire Prime!!" << endl;
     cout << endl;
-
+    
     int pileSum = 0;
     int pileTotal = 0;
     
@@ -77,24 +97,4 @@ void play(Deck deck)
         else if (deck.cardsLeft() == 0 && prime == 1)
             cout << "Winner in " << pileTotal << endl;
     }
-}
-
-
-
-int main(int argc, const char * argv[]) {
-    Deck deck;
-    int choice;
-    do {
-        displayMenu();
-        choice = getUserInput();
-        switch (choice) {
-            case 1: cout << "Creating new Deck" << endl << endl; deck.refreshDeck(); break;
-            case 2: cout << "Display Deck" << endl; deck.showDeck(); break;
-            case 3: cout << "Shuffling Deck" << endl << endl; deck.shuffle(); break;
-            case 4: play(deck); cout<<endl<<endl; break;
-            case 5: cout << "Exiting program" << endl; break;
-        }
-    }while(choice != 5);
-    
-    return 0;
 }
